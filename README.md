@@ -17,7 +17,7 @@ This repository has been created for the circuit simulation project in eSim
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Circuit Details
-A negative-edge triggered D type master-slave flip-flop consists of a pair of D-latches, positive latch (master) and negative latch (slave) connected in series. The latches are designed using mux by giving feedback from output to one of the inputs of 2:1 mux in. The mux is constructed using the transmission gates. The transmission gate is a bidirectional circuit which is made by connecting the pfet and nfet in parallel. The clock is given to the select lines of the mux so that the entire circuit behaves as the master slave negative edge triggered flipflop. During the high level of the clock, the master samples the input and the slave retains the previous output through feedback. At low level of the clock, the slave will go to transparent mode and samples the output of the master and the master will go to the hold mode, retaining the previous value. Thus, the output of master slave negative edge triggered flipflop changes once in one clock cycle during the high to low transition of clock. The transistors for desi
+A negative-edge triggered D type master-slave flip-flop consists of a pair of D-latches, positive latch (master) and negative latch (slave) connected in series. The latches are designed using mux by giving feedback from output to one of the inputs of 2:1 mux in. The mux is constructed using the transmission gates. The transmission gate is a bidirectional circuit which is made by connecting the pfet and nfet in parallel. The clock is given to the select lines of the mux so that the entire circuit behaves as the master slave negative edge triggered flipflop. During the high level of the clock, the master samples the input and the slave retains the previous output through feedback. At low level of the clock, the slave will go to transparent mode and samples the output of the master and the master will go to the hold mode, retaining the previous value. Thus, the output of master slave negative edge triggered flipflop changes once in one clock cycle during the high to low transition of clock. The transistors for designing all the circuits were used form the **SKY130PDK library** in eSim.
 
 ## Software Used
 ### eSim
@@ -34,16 +34,21 @@ http://ngspice.sourceforge.net/docs.html
 
 ## Circuit Diagram in eSim
 The following is the schematic in drawn in eSim:
+
 **Power Supply**
+
 ![power_supply](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/schematic/power_supply.png)
 
 **Clock Circuit**
+
 ![clock_circuit](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/schematic/clock_circuit.png)
 
 **Input Data**
+
 ![input_data](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/schematic/input_data.png)
 
 **Master Slave Negative Edge Flipflop Using SKY130PDK**
+
 ![schematic](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/schematic/schematic.png)
 
 
@@ -67,13 +72,16 @@ The following waveforms are the ngspice plots for the designed circuit :
 
 ![Clk_bar](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/outputs/Clk_bar.png)
 
-**Input Data (D) **
+**Input Data (D)**
+
 ![D](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/outputs/D.png)
 
 **Master Output (Qm)**
+
 ![Qm](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/outputs/Qm.png)
 
 **Output (Q)**
+
 ![Q](https://github.com/KanishR1/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/blob/main/outputs/Q.png)
 
 
