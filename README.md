@@ -109,6 +109,7 @@ The following waveforms are the ngspice plots for the designed circuit :
 
 ## Acknowlegdements
 1. FOSSEE, IIT Bombay
+2. Sumanto Kar, eSim Team, FOSSEE
 
 ## References
 1. Morris Mano & Michael D Ciletti, “Digital Design: With an Introduction to Verilog HDL, 5th Edition, Pearson Education, 2013
