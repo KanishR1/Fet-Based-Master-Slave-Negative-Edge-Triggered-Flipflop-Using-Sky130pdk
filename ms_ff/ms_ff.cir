@@ -1,0 +1,41 @@
+* /home/kanish/Fet-Based-Master-Slave-Negative-Edge-Triggered-Flipflop-Using-Sky130pdk/ms_ff/ms_ff.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sun Oct 23 18:27:15 2022
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v2  Vdd gnd DC		
+v3  clk gnd pulse		
+SC1  clk_bar clk Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC2  clk_bar clk gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+SC17  Net-_SC17-Pad1_ clk_bar Net-_SC13-Pad1_ Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC19  Net-_SC17-Pad1_ clk Net-_SC15-Pad1_ Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC7  Net-_SC10-Pad3_ clk Net-_SC5-Pad1_ Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC9  Net-_SC10-Pad3_ clk_bar Net-_SC10-Pad1_ Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC8  Net-_SC5-Pad1_ clk_bar Net-_SC10-Pad3_ gnd sky130_fd_pr__nfet_01v8_lvt		
+SC10  Net-_SC10-Pad1_ clk Net-_SC10-Pad3_ gnd sky130_fd_pr__nfet_01v8_lvt		
+SC18  Net-_SC13-Pad1_ clk Net-_SC17-Pad1_ gnd sky130_fd_pr__nfet_01v8_lvt		
+SC20  Net-_SC15-Pad1_ clk_bar Net-_SC17-Pad1_ gnd sky130_fd_pr__nfet_01v8_lvt		
+SC4  Net-_SC10-Pad1_ D gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+SC3  Net-_SC10-Pad1_ D Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC6  Net-_SC5-Pad1_ Qm gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+SC5  Net-_SC5-Pad1_ Qm Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC11  Qm Net-_SC10-Pad3_ Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC12  Qm Net-_SC10-Pad3_ gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+SC21  Q Net-_SC17-Pad1_ Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC22  Q Net-_SC17-Pad1_ gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+SC15  Net-_SC15-Pad1_ Qm Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC16  Net-_SC15-Pad1_ Qm gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+SC13  Net-_SC13-Pad1_ Q Vdd Vdd sky130_fd_pr__pfet_01v8_hvt		
+SC14  Net-_SC13-Pad1_ Q gnd gnd sky130_fd_pr__nfet_01v8_lvt		
+v1  D gnd pulse		
+U1  D plot_v1		
+U2  clk_bar plot_v1		
+U3  clk plot_v1		
+U4  Qm plot_v1		
+U5  Q plot_v1		
+scmode1  SKY130mode		
+
+.end

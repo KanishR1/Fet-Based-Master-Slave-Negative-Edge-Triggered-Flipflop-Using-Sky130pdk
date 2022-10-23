@@ -1,0 +1,952 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+LIBS:ms_ff-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DC v2
+U 1 1 635530AC
+P 10450 4650
+F 0 "v2" H 10250 4750 60  0000 C CNN
+F 1 "DC" H 10250 4600 60  0000 C CNN
+F 2 "R1" H 10150 4650 60  0000 C CNN
+F 3 "" H 10450 4650 60  0000 C CNN
+	1    10450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 63553127
+P 10900 4850
+F 0 "#PWR1" H 10900 4600 50  0001 C CNN
+F 1 "GND" H 10900 4700 50  0000 C CNN
+F 2 "" H 10900 4850 50  0001 C CNN
+F 3 "" H 10900 4850 50  0001 C CNN
+	1    10900 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 10450 4100 1    60   Input ~ 0
+Vdd
+Text GLabel 10900 4750 1    60   Input ~ 0
+gnd
+Text GLabel 1250 6350 1    60   Input ~ 0
+clk
+Text GLabel 2600 6900 2    60   Input ~ 0
+clk_bar
+Text GLabel 10450 5300 3    60   Input ~ 0
+gnd
+$Comp
+L pulse v3
+U 1 1 63553162
+P 1250 6900
+F 0 "v3" H 1050 7000 60  0000 C CNN
+F 1 "pulse" H 1050 6850 60  0000 C CNN
+F 2 "R1" H 950 6900 60  0000 C CNN
+F 3 "" H 1250 6900 60  0000 C CNN
+	1    1250 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 7400 3    60   Input ~ 0
+gnd
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC1
+U 1 1 6355323B
+P 2250 6550
+F 0 "SC1" H 2300 6850 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 2550 6637 50  0000 R CNN
+F 2 "" H 2250 5050 50  0001 C CNN
+F 3 "" H 2250 6550 50  0001 C CNN
+	1    2250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC2
+U 1 1 635532BE
+P 2250 7250
+F 0 "SC2" H 2300 7550 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 2550 7337 50  0000 R CNN
+F 2 "" H 2250 5750 50  0001 C CNN
+F 3 "" H 2250 7250 50  0001 C CNN
+	1    2250 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 6850 0    60   Input ~ 0
+clk
+Text GLabel 2700 7600 2    60   Input ~ 0
+gnd
+Text GLabel 2500 6150 1    60   Input ~ 0
+Vdd
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC17
+U 1 1 63553490
+P 7300 1900
+F 0 "SC17" H 7350 2200 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 7600 1987 50  0000 R CNN
+F 2 "" H 7300 400 50  0001 C CNN
+F 3 "" H 7300 1900 50  0001 C CNN
+	1    7300 1900
+	0    -1   1    0   
+$EndComp
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC19
+U 1 1 63553506
+P 7300 3550
+F 0 "SC19" H 7350 3850 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 7600 3637 50  0000 R CNN
+F 2 "" H 7300 2050 50  0001 C CNN
+F 3 "" H 7300 3550 50  0001 C CNN
+	1    7300 3550
+	0    -1   1    0   
+$EndComp
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC7
+U 1 1 63553558
+P 2800 2100
+F 0 "SC7" H 2850 2400 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 3100 2187 50  0000 R CNN
+F 2 "" H 2800 600 50  0001 C CNN
+F 3 "" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	0    -1   1    0   
+$EndComp
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC9
+U 1 1 635535D9
+P 2800 3800
+F 0 "SC9" H 2850 4100 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 3100 3887 50  0000 R CNN
+F 2 "" H 2800 2300 50  0001 C CNN
+F 3 "" H 2800 3800 50  0001 C CNN
+	1    2800 3800
+	0    -1   1    0   
+$EndComp
+Text GLabel 7300 2150 3    60   Input ~ 0
+Vdd
+Text GLabel 7300 3800 3    60   Input ~ 0
+Vdd
+Text GLabel 2800 2350 3    60   Input ~ 0
+Vdd
+Text GLabel 2800 4050 3    60   Input ~ 0
+Vdd
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC8
+U 1 1 6355379F
+P 2800 3050
+F 0 "SC8" H 2850 3350 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 3100 3137 50  0000 R CNN
+F 2 "" H 2800 1550 50  0001 C CNN
+F 3 "" H 2800 3050 50  0001 C CNN
+	1    2800 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC10
+U 1 1 63553853
+P 2800 4750
+F 0 "SC10" H 2850 5050 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 3100 4837 50  0000 R CNN
+F 2 "" H 2800 3250 50  0001 C CNN
+F 3 "" H 2800 4750 50  0001 C CNN
+	1    2800 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC18
+U 1 1 635538AF
+P 7300 2850
+F 0 "SC18" H 7350 3150 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 7600 2937 50  0000 R CNN
+F 2 "" H 7300 1350 50  0001 C CNN
+F 3 "" H 7300 2850 50  0001 C CNN
+	1    7300 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC20
+U 1 1 6355399C
+P 7300 4500
+F 0 "SC20" H 7350 4800 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 7600 4587 50  0000 R CNN
+F 2 "" H 7300 3000 50  0001 C CNN
+F 3 "" H 7300 4500 50  0001 C CNN
+	1    7300 4500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2800 2800 1    60   Input ~ 0
+gnd
+Text GLabel 2800 4500 1    60   Input ~ 0
+gnd
+Text GLabel 7300 2600 1    60   Input ~ 0
+gnd
+Text GLabel 7300 4250 1    60   Input ~ 0
+gnd
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC4
+U 1 1 6355434A
+P 1800 4650
+F 0 "SC4" H 1850 4950 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 2100 4737 50  0000 R CNN
+F 2 "" H 1800 3150 50  0001 C CNN
+F 3 "" H 1800 4650 50  0001 C CNN
+	1    1800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC3
+U 1 1 635544CC
+P 1800 3950
+F 0 "SC3" H 1850 4250 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 2100 4037 50  0000 R CNN
+F 2 "" H 1800 2450 50  0001 C CNN
+F 3 "" H 1800 3950 50  0001 C CNN
+	1    1800 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 5050 3    60   Input ~ 0
+gnd
+Text GLabel 2050 3550 1    60   Input ~ 0
+Vdd
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC6
+U 1 1 63554A25
+P 2000 2950
+F 0 "SC6" H 2050 3250 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 2300 3037 50  0000 R CNN
+F 2 "" H 2000 1450 50  0001 C CNN
+F 3 "" H 2000 2950 50  0001 C CNN
+	1    2000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC5
+U 1 1 63554A9E
+P 2000 2250
+F 0 "SC5" H 2050 2550 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 2300 2337 50  0000 R CNN
+F 2 "" H 2000 750 50  0001 C CNN
+F 3 "" H 2000 2250 50  0001 C CNN
+	1    2000 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 1900 1    60   Input ~ 0
+Vdd
+Text GLabel 2250 3300 3    60   Input ~ 0
+gnd
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC11
+U 1 1 6355529D
+P 3950 3150
+F 0 "SC11" H 4000 3450 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 4250 3237 50  0000 R CNN
+F 2 "" H 3950 1650 50  0001 C CNN
+F 3 "" H 3950 3150 50  0001 C CNN
+	1    3950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC12
+U 1 1 63555340
+P 3950 3850
+F 0 "SC12" H 4000 4150 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 4250 3937 50  0000 R CNN
+F 2 "" H 3950 2350 50  0001 C CNN
+F 3 "" H 3950 3850 50  0001 C CNN
+	1    3950 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 2800 1    60   Input ~ 0
+Vdd
+Text GLabel 4200 4200 3    60   Input ~ 0
+gnd
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC21
+U 1 1 6355662F
+P 8300 3000
+F 0 "SC21" H 8350 3300 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 8600 3087 50  0000 R CNN
+F 2 "" H 8300 1500 50  0001 C CNN
+F 3 "" H 8300 3000 50  0001 C CNN
+	1    8300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC22
+U 1 1 635566D0
+P 8300 3700
+F 0 "SC22" H 8350 4000 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 8600 3787 50  0000 R CNN
+F 2 "" H 8300 2200 50  0001 C CNN
+F 3 "" H 8300 3700 50  0001 C CNN
+	1    8300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 4100 10450 4200
+Wire Wire Line
+	10450 5100 10450 5300
+Wire Wire Line
+	10900 4750 10900 4850
+Wire Wire Line
+	1250 6350 1250 6450
+Wire Wire Line
+	1250 7350 1250 7400
+Wire Wire Line
+	2450 6850 2450 6950
+Wire Wire Line
+	2450 6250 2550 6250
+Wire Wire Line
+	2550 6250 2550 6550
+Wire Wire Line
+	2550 6550 2350 6550
+Wire Wire Line
+	2350 7250 2550 7250
+Wire Wire Line
+	2550 7250 2550 7550
+Wire Wire Line
+	2550 7550 2450 7550
+Wire Wire Line
+	1950 6550 1900 6550
+Wire Wire Line
+	1900 6550 1900 7250
+Wire Wire Line
+	1900 7250 1950 7250
+Wire Wire Line
+	2600 6900 2450 6900
+Connection ~ 2450 6900
+Wire Wire Line
+	1750 6850 1900 6850
+Connection ~ 1900 6850
+Connection ~ 2500 7550
+Wire Wire Line
+	2500 6150 2500 6250
+Connection ~ 2500 6250
+Wire Wire Line
+	2800 2350 2800 2200
+Wire Wire Line
+	2800 2800 2800 2950
+Wire Wire Line
+	2800 4500 2800 4650
+Wire Wire Line
+	2800 3900 2800 4050
+Wire Wire Line
+	3100 2300 3150 2300
+Wire Wire Line
+	3150 2300 3150 2850
+Wire Wire Line
+	3150 2850 3100 2850
+Wire Wire Line
+	2500 2300 2450 2300
+Wire Wire Line
+	2450 2300 2450 2850
+Wire Wire Line
+	2450 2850 2500 2850
+Wire Wire Line
+	3100 4000 3150 4000
+Wire Wire Line
+	3150 4000 3150 4550
+Wire Wire Line
+	3150 4550 3100 4550
+Wire Wire Line
+	2500 4000 2450 4000
+Wire Wire Line
+	2450 4000 2450 4550
+Wire Wire Line
+	2450 4550 2500 4550
+Wire Wire Line
+	2800 3350 2800 3500
+Wire Wire Line
+	2000 4250 2000 4350
+Wire Wire Line
+	1500 3950 1450 3950
+Wire Wire Line
+	1450 3950 1450 4650
+Wire Wire Line
+	1450 4650 1500 4650
+Wire Wire Line
+	2000 3650 2100 3650
+Wire Wire Line
+	2100 3650 2100 3950
+Wire Wire Line
+	2100 3950 1900 3950
+Wire Wire Line
+	1900 4650 2100 4650
+Wire Wire Line
+	2100 4650 2100 4950
+Wire Wire Line
+	2100 4950 2000 4950
+Wire Wire Line
+	2050 5050 2050 4950
+Connection ~ 2050 4950
+Wire Wire Line
+	2050 3550 2050 3650
+Connection ~ 2050 3650
+Wire Wire Line
+	2000 4300 2450 4300
+Connection ~ 2450 4300
+Connection ~ 2000 4300
+Wire Wire Line
+	2200 2550 2200 2650
+Wire Wire Line
+	1700 2250 1650 2250
+Wire Wire Line
+	1650 2250 1650 2950
+Wire Wire Line
+	1650 2950 1700 2950
+Wire Wire Line
+	2100 2950 2300 2950
+Wire Wire Line
+	2300 2950 2300 3250
+Wire Wire Line
+	2300 3250 2200 3250
+Wire Wire Line
+	2100 2250 2300 2250
+Wire Wire Line
+	2300 2250 2300 1950
+Wire Wire Line
+	2300 1950 2200 1950
+Wire Wire Line
+	2250 3300 2250 3250
+Connection ~ 2250 3250
+Wire Wire Line
+	2250 1900 2250 1950
+Connection ~ 2250 1950
+Wire Wire Line
+	2200 2600 2450 2600
+Connection ~ 2450 2600
+Connection ~ 2200 2600
+Wire Wire Line
+	3150 2550 3500 2550
+Wire Wire Line
+	3500 2550 3500 4300
+Wire Wire Line
+	3500 4300 3150 4300
+Connection ~ 3150 4300
+Connection ~ 3150 2550
+Wire Wire Line
+	4150 3450 4150 3550
+Wire Wire Line
+	3650 3150 3600 3150
+Wire Wire Line
+	3600 3150 3600 3850
+Wire Wire Line
+	3600 3850 3650 3850
+Wire Wire Line
+	4050 3850 4250 3850
+Wire Wire Line
+	4250 3850 4250 4150
+Wire Wire Line
+	4250 4150 4150 4150
+Wire Wire Line
+	4150 2850 4250 2850
+Wire Wire Line
+	4250 2850 4250 3150
+Wire Wire Line
+	4250 3150 4050 3150
+Wire Wire Line
+	4200 4200 4200 4150
+Connection ~ 4200 4150
+Wire Wire Line
+	4200 2800 4200 2850
+Connection ~ 4200 2850
+Wire Wire Line
+	3500 3500 3600 3500
+Connection ~ 3600 3500
+Connection ~ 3500 3500
+Wire Wire Line
+	4150 3500 5100 3500
+Wire Wire Line
+	4750 1200 4750 3500
+Wire Wire Line
+	4750 1200 1150 1200
+Wire Wire Line
+	1150 1200 1150 2550
+Wire Wire Line
+	1150 2550 1650 2550
+Connection ~ 1650 2550
+Connection ~ 4150 3500
+Wire Wire Line
+	7300 2600 7300 2750
+Wire Wire Line
+	7300 2150 7300 2000
+Wire Wire Line
+	7600 2100 7650 2100
+Wire Wire Line
+	7650 2100 7650 2650
+Wire Wire Line
+	7650 2650 7600 2650
+Wire Wire Line
+	7000 2100 6950 2100
+Wire Wire Line
+	6950 2100 6950 2650
+Wire Wire Line
+	6950 2650 7000 2650
+Wire Wire Line
+	7300 3800 7300 3650
+Wire Wire Line
+	7300 4400 7300 4250
+Wire Wire Line
+	7600 3750 7650 3750
+Wire Wire Line
+	7650 3750 7650 4300
+Wire Wire Line
+	7650 4300 7600 4300
+Wire Wire Line
+	7000 3750 6950 3750
+Wire Wire Line
+	6950 3750 6950 4300
+Wire Wire Line
+	6950 4300 7000 4300
+Wire Wire Line
+	7300 3150 7300 3250
+Wire Wire Line
+	7650 2350 7850 2350
+Wire Wire Line
+	7850 2350 7850 4050
+Wire Wire Line
+	7850 4050 7650 4050
+Connection ~ 7650 4050
+Connection ~ 7650 2350
+Wire Wire Line
+	8500 3300 8500 3400
+Wire Wire Line
+	8400 3700 8600 3700
+Wire Wire Line
+	8600 3700 8600 4000
+Wire Wire Line
+	8600 4000 8500 4000
+Wire Wire Line
+	8500 2700 8600 2700
+Wire Wire Line
+	8600 2700 8600 3000
+Wire Wire Line
+	8600 3000 8400 3000
+Wire Wire Line
+	8000 3000 7950 3000
+Wire Wire Line
+	7950 3000 7950 3700
+Wire Wire Line
+	7950 3700 8000 3700
+Text GLabel 8550 2650 1    60   Input ~ 0
+Vdd
+Wire Wire Line
+	8550 2650 8550 2700
+Connection ~ 8550 2700
+Text GLabel 8550 4050 3    60   Input ~ 0
+gnd
+Wire Wire Line
+	8550 4050 8550 4000
+Connection ~ 8550 4000
+Wire Wire Line
+	7950 3300 7850 3300
+Connection ~ 7850 3300
+Connection ~ 7950 3300
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC15
+U 1 1 635574B0
+P 6550 3650
+F 0 "SC15" H 6600 3950 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 6850 3737 50  0000 R CNN
+F 2 "" H 6550 2150 50  0001 C CNN
+F 3 "" H 6550 3650 50  0001 C CNN
+	1    6550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC16
+U 1 1 63557591
+P 6550 4350
+F 0 "SC16" H 6600 4650 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 6850 4437 50  0000 R CNN
+F 2 "" H 6550 2850 50  0001 C CNN
+F 3 "" H 6550 4350 50  0001 C CNN
+	1    6550 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6800 4700 3    60   Input ~ 0
+gnd
+Text GLabel 6800 3300 1    60   Input ~ 0
+Vdd
+Wire Wire Line
+	6750 3350 6850 3350
+Wire Wire Line
+	6850 3350 6850 3650
+Wire Wire Line
+	6850 3650 6650 3650
+Wire Wire Line
+	6750 3950 6750 4050
+Wire Wire Line
+	6650 4350 6850 4350
+Wire Wire Line
+	6850 4350 6850 4650
+Wire Wire Line
+	6850 4650 6750 4650
+Wire Wire Line
+	6250 3650 6200 3650
+Wire Wire Line
+	6200 3650 6200 4350
+Wire Wire Line
+	6200 4350 6250 4350
+Wire Wire Line
+	6800 4700 6800 4650
+Connection ~ 6800 4650
+Wire Wire Line
+	6800 3300 6800 3350
+Connection ~ 6800 3350
+Wire Wire Line
+	6750 4000 6950 4000
+Connection ~ 6950 4000
+Connection ~ 6750 4000
+Wire Wire Line
+	5100 3500 5100 4250
+Wire Wire Line
+	5100 3950 6200 3950
+Connection ~ 6200 3950
+Connection ~ 4750 3500
+$Comp
+L sky130_fd_pr__pfet_01v8_hvt SC13
+U 1 1 6355814A
+P 6350 2000
+F 0 "SC13" H 6400 2300 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8_hvt" H 6650 2087 50  0000 R CNN
+F 2 "" H 6350 500 50  0001 C CNN
+F 3 "" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8_lvt SC14
+U 1 1 635582D9
+P 6350 2700
+F 0 "SC14" H 6400 3000 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8_lvt" H 6650 2787 50  0000 R CNN
+F 2 "" H 6350 1200 50  0001 C CNN
+F 3 "" H 6350 2700 50  0001 C CNN
+	1    6350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2300 6550 2400
+Wire Wire Line
+	6550 1700 6650 1700
+Wire Wire Line
+	6650 1700 6650 2000
+Wire Wire Line
+	6650 2000 6450 2000
+Wire Wire Line
+	6450 2700 6650 2700
+Wire Wire Line
+	6650 2700 6650 3000
+Wire Wire Line
+	6650 3000 6550 3000
+Wire Wire Line
+	6050 2000 6000 2000
+Wire Wire Line
+	6000 2000 6000 2700
+Wire Wire Line
+	6000 2700 6050 2700
+Text GLabel 6600 1650 1    60   Input ~ 0
+Vdd
+Wire Wire Line
+	6600 1650 6600 1700
+Connection ~ 6600 1700
+Text GLabel 6600 3050 3    60   Input ~ 0
+gnd
+Wire Wire Line
+	6600 3050 6600 3000
+Connection ~ 6600 3000
+Wire Wire Line
+	6550 2350 6950 2350
+Connection ~ 6950 2350
+Connection ~ 6550 2350
+Wire Wire Line
+	8500 3350 9500 3350
+Wire Wire Line
+	9200 3350 9200 1050
+Wire Wire Line
+	9200 1050 5350 1050
+Wire Wire Line
+	5350 1050 5350 2350
+Wire Wire Line
+	5350 2350 6000 2350
+Connection ~ 6000 2350
+Connection ~ 8500 3350
+Text GLabel 2900 1700 2    60   Input ~ 0
+clk
+Wire Wire Line
+	2900 1700 2800 1700
+Wire Wire Line
+	2800 1700 2800 1800
+Text GLabel 2850 5200 2    60   Input ~ 0
+clk
+Wire Wire Line
+	2850 5200 2800 5200
+Wire Wire Line
+	2800 5200 2800 5050
+Text GLabel 7400 3200 2    60   Input ~ 0
+clk
+Wire Wire Line
+	7400 3200 7300 3200
+Connection ~ 7300 3200
+Text GLabel 2950 3400 2    60   Input ~ 0
+clk_bar
+Wire Wire Line
+	2950 3400 2800 3400
+Connection ~ 2800 3400
+Text GLabel 7350 1500 2    60   Input ~ 0
+clk_bar
+Wire Wire Line
+	7350 1500 7300 1500
+Wire Wire Line
+	7300 1500 7300 1600
+Text GLabel 7350 4950 2    60   Input ~ 0
+clk_bar
+Wire Wire Line
+	7350 4950 7300 4950
+Wire Wire Line
+	7300 4950 7300 4800
+Text GLabel 4850 4250 0    60   Input ~ 0
+Qm
+Text GLabel 9500 3350 2    60   Input ~ 0
+Q
+Connection ~ 9200 3350
+Wire Wire Line
+	5100 4250 4850 4250
+Connection ~ 5100 3950
+$Comp
+L pulse v1
+U 1 1 6355A1F5
+P 10600 2800
+F 0 "v1" H 10400 2900 60  0000 C CNN
+F 1 "pulse" H 10400 2750 60  0000 C CNN
+F 2 "R1" H 10300 2800 60  0000 C CNN
+F 3 "" H 10600 2800 60  0000 C CNN
+	1    10600 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 2250 0    60   Input ~ 0
+D
+Wire Wire Line
+	10550 2250 10600 2250
+Wire Wire Line
+	10600 2250 10600 2350
+Text GLabel 10600 3350 3    60   Input ~ 0
+gnd
+Wire Wire Line
+	10600 3250 10600 3350
+Text GLabel 1250 4250 0    60   Input ~ 0
+D
+Wire Wire Line
+	1250 4250 1450 4250
+Connection ~ 1450 4250
+$Comp
+L plot_v1 U1
+U 1 1 6355A819
+P -5250 3550
+F 0 "U1" H -5250 4050 60  0000 C CNN
+F 1 "plot_v1" H -5050 3900 60  0000 C CNN
+F 2 "" H -5250 3550 60  0000 C CNN
+F 3 "" H -5250 3550 60  0000 C CNN
+	1    -5250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U2
+U 1 1 6355A924
+P -4850 3550
+F 0 "U2" H -4850 4050 60  0000 C CNN
+F 1 "plot_v1" H -4650 3900 60  0000 C CNN
+F 2 "" H -4850 3550 60  0000 C CNN
+F 3 "" H -4850 3550 60  0000 C CNN
+	1    -4850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U3
+U 1 1 6355A9E8
+P -4450 3550
+F 0 "U3" H -4450 4050 60  0000 C CNN
+F 1 "plot_v1" H -4250 3900 60  0000 C CNN
+F 2 "" H -4450 3550 60  0000 C CNN
+F 3 "" H -4450 3550 60  0000 C CNN
+	1    -4450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U4
+U 1 1 6355AAC0
+P -4000 3550
+F 0 "U4" H -4000 4050 60  0000 C CNN
+F 1 "plot_v1" H -3800 3900 60  0000 C CNN
+F 2 "" H -4000 3550 60  0000 C CNN
+F 3 "" H -4000 3550 60  0000 C CNN
+	1    -4000 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel -4850 3500 3    60   Input ~ 0
+clk_bar
+Text GLabel -5250 3750 3    60   Input ~ 0
+D
+Text GLabel -4450 3700 3    60   Input ~ 0
+clk
+$Comp
+L plot_v1 U5
+U 1 1 6355ADBB
+P -3550 3550
+F 0 "U5" H -3550 4050 60  0000 C CNN
+F 1 "plot_v1" H -3350 3900 60  0000 C CNN
+F 2 "" H -3550 3550 60  0000 C CNN
+F 3 "" H -3550 3550 60  0000 C CNN
+	1    -3550 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel -4000 3700 3    60   Input ~ 0
+Qm
+Text GLabel -3550 3700 3    60   Input ~ 0
+Q
+Wire Wire Line
+	-5250 3350 -5250 3750
+Wire Wire Line
+	-4850 3500 -4850 3350
+Wire Wire Line
+	-4450 3700 -4450 3350
+Wire Wire Line
+	-4000 3700 -4000 3350
+Wire Wire Line
+	-3550 3700 -3550 3350
+$Comp
+L SKY130mode scmode1
+U 1 1 6355B881
+P 10550 1250
+F 0 "scmode1" H 10550 1400 98  0000 C CNB
+F 1 "SKY130mode" H 10550 1150 118 0000 C CNB
+F 2 "" H 10550 1400 60  0001 C CNN
+F 3 "" H 10550 1400 60  0001 C CNN
+	1    10550 1250
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	-5400 2800 -3100 2800
+Wire Notes Line
+	-3100 2800 -3100 4000
+Wire Notes Line
+	-3100 4000 -5400 4000
+Wire Notes Line
+	-5400 4000 -5400 2800
+Text Notes -4550 2800 0    60   ~ 0
+Plot Functions
+Wire Notes Line
+	10200 2150 10200 3650
+Wire Notes Line
+	10200 3650 10900 3650
+Wire Notes Line
+	10900 3650 10900 2150
+Wire Notes Line
+	10900 2150 10200 2150
+Text Notes 10300 2150 0    60   ~ 0
+Input Data
+Text Notes 1550 5900 0    60   ~ 0
+Clock Circuit
+Wire Notes Line
+	10000 3800 10000 5600
+Wire Notes Line
+	10000 5600 11100 5600
+Wire Notes Line
+	11100 5600 11100 3800
+Wire Notes Line
+	11100 3800 10000 3800
+Text Notes 10300 3800 0    60   ~ 0
+Power Supply
+Wire Notes Line
+	5200 850  5200 5550
+Wire Notes Line
+	9750 850  9750 5550
+Wire Notes Line
+	9750 850  5200 850 
+Wire Notes Line
+	5150 850  5150 5550
+Wire Notes Line
+	5150 850  800  850 
+Wire Notes Line
+	800  850  800  5550
+Wire Notes Line
+	800  5550 5150 5550
+Wire Notes Line
+	9750 5550 5200 5550
+Text Notes 2250 850  0    71   ~ 0
+Master Stage ( Positive Latch )
+Text Notes 6850 850  0    71   ~ 0
+Slave Stage ( Negative Latch )
+Wire Notes Line
+	600  650  9900 650 
+Wire Notes Line
+	9900 650  9900 5700
+Wire Notes Line
+	9900 5700 600  5700
+Wire Notes Line
+	600  5700 600  650 
+Text Notes 3700 650  0    98   ~ 0
+Master Slave Negative Edge Triggered Flipflop
+Wire Notes Line
+	850  5900 3000 5900
+Wire Notes Line
+	3000 5900 3000 7700
+Wire Notes Line
+	3000 7700 850  7700
+Wire Notes Line
+	850  7700 850  5900
+Wire Wire Line
+	2700 7600 2500 7600
+Wire Wire Line
+	2500 7600 2500 7550
+$EndSCHEMATC
